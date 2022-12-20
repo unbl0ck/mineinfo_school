@@ -1,10 +1,12 @@
-<center>
-  <p>This repo is not to be taken seriously. This will NOT be maintained. This is purely for a school project.</p>
-</center>
+<div align="center">
+  <p>This repo is <strong>NOT</strong> to be taken seriously. This will <strong>NOT</strong> be maintained. This is purely for a school project.</p>
+</div>
+
 ![Logo](https://i.ibb.co/B2bPtzP/mineinfo-title.png)
+
 <div align="center">
   <img src="https://img.shields.io/github/last-commit/unbl0ck/mineinfo_school?logo=git&style=for-the-badge">
-  <img src="https://img.shields.io/maintenance/no/2023?style=for-the-badge">
+  <img src="https://img.shields.io/maintenance/no/2022?style=for-the-badge">
 </div>
 
 # MineInfo (School Project)
