@@ -1,4 +1,4 @@
-![Logo](https://i.ibb.co/CHkPGZ6/project-hub-title.png)
+![Logo](https://i.ibb.co/B2bPtzP/mineinfo-title.png)
 <div align="center">
   <img src="https://img.shields.io/github/last-commit/unbl0ck/mineinfo_school?logo=git&style=for-the-badge">
   <img src="https://img.shields.io/maintenance/no/2023?style=for-the-badge">
