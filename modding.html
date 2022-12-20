@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Display-->
+        <title>MineInfo | Modding</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <!--Stylesheets-->
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+        <script src="https://kit.fontawesome.com/4139823eac.js" crossorigin="anonymous"></script>
+        <!--Meta-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Styling-->
+        <style>
+            /* Slideshow */
+            .slideshow button {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                background-color: snow;
+                border: 1px solid transparent;
+                border-radius: 5px;
+                margin: 0 1vw;
+                color: #64829e;
+                width: 3vw;
+                height: 3vw;
+                cursor: pointer;
+            }
+            .slides div {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                background-color: snow;
+                padding: 1vw 3vw;
+                margin: 1vw 0;
+                border: 1px solid transparent;
+                border-radius: 5px;
+                color: #64829e;
+                letter-spacing: 2px;
+            }
+            .slides img {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                border: 1px solid transparent;
+                border-radius: 10px;
+                width: 3vw;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Navbar-->
+        <nav class="nav">
+			<div class="header">
+				<h4><a href="index.html" class="header-text">MineInfo</a></h4>
+			</div>
+			<ul class="nav-links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="versions.html">Versions</a></li>
+				<li><a href="servers.html">Servers</a></li>
+				<li><a href="combat.html">Combat</a></li>
+				<li id="nav-links-active"><a href="modding.html">Modding</a></li>
+			</ul>
+		</nav>
+        <!--Header Image-->
+        <img src="img/index/header.png" alt="Image couldn't load." class="img-header">
+
+        <!--Content-->
+        <div class="content">
+            <!--Description-->
+            <div class="desc-box">
+                <h2 style="font-weight: bold;"><i class="fa-solid fa-screwdriver-wrench"></i> Modding</h2>
+                <p>The modding scene in Minecraft is a large, vibrant, and active community of players and developers creating and sharing mods that alter the gameplay and add new content to the game.</p>
+                <p>Mods can range from small changes to the game's mechanics to massive overhauls that add entirely new gameplay elements and features.</p>
+                <p>Players can install mods by using specialized software, such as Minecraft Forge, which allows them to easily manage and install mods.</p>
+                <p>Overall, the modding scene in Minecraft is a key part of the game's enduring popularity, as it allows players to customize and extend their gameplay experience in endless ways.</p>
+            </div>
+            <!--Video-->
+            <center>
+                <h2 style="font-weight: bold; color: #64829e;">Step-by-Step Forge Installation</h2>
+                <div class="w3-content w3-display-container slideshow">
+                    <div class="w3-display-container slides">
+                        <img src="img/modding/step1.png" style="width:100%;">
+                        <div class="w3-display-bottommiddle">Search "Minecraft Forge"</div>
+                    </div>
+                    <div class="w3-display-container slides">
+                        <img src="img/modding/step2.png" style="width:100%;">
+                        <div class="w3-display-bottommiddle">Download Latest Version</div>
+                    </div>
+                    <div class="w3-display-container slides">
+                        <img src="img/modding/step3.png" style="width:100%;">
+                        <div class="w3-display-bottommiddle">Install Forge Client</div>
+                    </div>
+                    <div class="w3-display-container slides">
+                        <img src="img/modding/step4.png" style="width:100%;">
+                        <div class="w3-display-bottommiddle">Select 'Forge' Version</div>
+                    </div>
+                    <div class="w3-display-container slides">
+                        <img src="img/modding/step5.png" style="width:100%;">
+                        <div class="w3-display-bottommiddle">Import Mods</div>
+                    </div>
+                    <button class="w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                </div>
+            </center>
+        </div> <!--Closing Content-->
+
+        <!--Footer-->
+        <footer class="footer">
+            <p class="w3-center w3-text-white">Christian Santangelo <i class="fa-regular fa-copyright"></i></p>
+            <p class="footer-link"><a href="https://github.com/unbl0ck" class="w3-text-white w3-border w3-round-xxlarge">GitHub Page</a><p>
+        </footer>
+        <!--Slideshow Script-->
+        <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+
+                function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                }
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("slides");
+                    if (n > x.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = x.length}
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";  
+                    }
+                    x[slideIndex-1].style.display = "block";  
+                }
+        </script>
+    </body>
+</html>
